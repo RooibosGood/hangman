@@ -33,7 +33,7 @@ def hangman(word):
         e = wrong + 1
         print("\n".join(stages[0:e]))
         if "_" not in board:
-            print("あなたの勝ち")
+            print("あなたの勝ち!!")
             print(" ".join(board))
             win = True
             break
@@ -42,3 +42,6 @@ def hangman(word):
         print("あなたの負け！正解は {}.".format(word))
 
 hangman("letter")
+
+
+
